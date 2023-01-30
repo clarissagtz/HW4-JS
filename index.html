@@ -1,0 +1,210 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarissa's Portfolio</title>
+    <link rel="icon"  href="sunfloweer.jpg">
+
+    <style>
+        table,th,td {
+            border: 1px black solid;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1> Clarissa Gutierrez </h1>
+        <h3>Welcome to my personal portfolio: </h3>
+
+        <nav>
+            <ol>
+                <li><a href="#About">About</a></li>
+                <li> <a href="#Education">Education</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="experiments.html">Experiments (all extra tags in here)</a></li>
+            </ol>
+        </nav>
+
+    </header>
+    <main>
+        <section id="About">
+            <h2>About</h2>
+            <h3>Who I am </h3>
+            <p>My name is Clarissa I am currently a student at the University of California San Diego. I am interested in 
+                work as a Software Engineer/Developer or Front End Engineer in the future. I really like web devlopment. </p>
+
+            <figure>
+                <img src="SS.png" alt="Clarissa pic" width="205" height="250">
+
+                <figurecaption>This is me:) </figurecaption>
+            </figure>
+        </section>
+
+        <section id="Education">
+            <h2>Education </h2>
+            <h3>University of California San Diego</h3>
+            <p>Currently pursuing a <span>B.S in Mathematics and Computer Science</span> with a minor in Cognitive
+                Science.
+            </p>
+            <p>Expected graduation date – <i>June 2023</i></p>
+
+            <h3>Southwestern College</h3>
+            <p> A.S Degree in Mathematics
+            <p> A.A Degree in Computer Science </p>
+
+
+            <a href=#> go upp</a>
+        </section>
+
+        <section id="Experience">
+            <h2>Experience</h2>
+
+            <h4>INSTRUCTIONAL ASSISTANT (MATH)</h4>
+            <em>CVLCC High School– Chula Vista CA</em>
+            <ul>
+                <li>Assisted struggling students with math concepts. (Math I,II,II, Pre-calc, AP Calc)</li>
+                <li>Helped students interpret instructions and comprehend the class content </li>
+                <li>Discussed assigned duties with classroom teachers to coordinate instructional efforts</li>
+            </ul>
+
+            <h4>SOFTWARE DEVELOPER INTERN </h4>
+            <em>San Diego Supercomputer Center – La Jolla CA</em>
+            <ul>
+                <li>Partnered with team members to complete bi-weekly goals.</li>
+                <li>Code the proposed UI and UX designs.</li>
+                <li>Designed user-friendly software to improve accessibility and enhance user experience</li>
+                <li>Use of ReactJS</li>
+            </ul>
+
+            <h4>TUTOR</h4>
+            <em>Kumon Math & Reading Center – Chula Vista CA</em>
+            <ul>
+                <li>Supported students in development of efficient and effective study skills.</li>
+                <li>Tutored children in small groups and individually</li>
+                <li>Worked with students providing supplemental support in learning different math concepts</li>
+            </ul>
+            <a href=#> go upp</a>
+        </section>
+
+
+        <section id="Skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Team Collaboration</li>
+                <li>Software: Intellij, Eclipse,  VS Code </li>
+                <li>GIT </li>
+                <li>Bilingual</li>
+
+            </ul>
+            <table>
+                <caption>Programming Langauges</caption>
+                <colgroup>
+                    <col span="2">
+                </colgroup>
+                <tr>
+                    <th>Languages</th>
+                    <th>Proficiency </th>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>4/5</td>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                    <td>3/5</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>2/5</td>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>3/5</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>3/5</td>
+                </tr>
+            </table>
+
+        </section>
+
+
+        <section id="Projects">
+            <h2>Projects</h2>
+
+            <p> <b>Filet-me-on</b> web application developed during my summer internship, this is a site that
+                helps you decide where to eat. This is a recommender restaurant app.</p>
+            <p> <b>UCSD-Toolbox</b> web application developed by two UCSD students (my friend and I) this is
+                a page with all the websites most used by students. We developed a page where you have
+                everything one click away, UCSD- toolbox has everything.</p>
+            <p> <b>Smart-Schedule APP</b> This was a project for my Software Engineering class at UCSD. My
+                team developed a smart task schedule web application, using Java Script, HTML and CSS.</p>
+
+        </section>
+
+
+        <section id="Contact">
+            <h2>Contact</h2>
+            <div>
+                <aside>
+                    <p>You are encourage to send me a message </p>
+                </aside>
+            </div>
+
+            <form>
+                <fieldset>
+                    <legend> <strong>Get in Touch </strong></legend>
+
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Your First name"><br><br>
+
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Your Last name"><br><br>
+
+                    <label for="email">Your email:</label>
+                    <input type="email" id="email" name="email" placeholder="Email in here"><br><br>
+
+                    <label for="org">Reason:</label>
+                    <input list="organization" id="org" name="org">
+                    <datalist id="organization">
+                        <option value="Collaboration">
+                        <option value="Job Opportunity">
+                        <option value="Other">
+                    </datalist>
+                    <br><br>
+
+                    <label for="message">Message:</label><br><br>
+                    <textarea id="message" name="message" placeholder="Write yout message in here.." rows="7"
+                        cols="70"></textarea>
+
+                    <input type="submit">
+
+                </fieldset>
+            </form>
+        </section>
+
+
+        <a href="#" style="text-decoration: none;">
+            <button>GO TO THE TOP</button></a>
+            
+        <br><br><hr>
+
+
+
+    </main>
+
+    <footer>
+        This page was made by : Clarissa Gutierrez
+    </footer>
+
+
+</body>
+
+</html>
