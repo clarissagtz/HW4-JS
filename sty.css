@@ -315,7 +315,6 @@ h2{
 
   .card p{
       /* font-size: 1.5rem; */
-      font-size: auto;
       margin: auto;
       padding-top: 15px;
       color: black;      
@@ -331,7 +330,7 @@ h2{
       text-decoration: none;
     }
     .personal{
-      font-size: 400;
+      font-size: 1.3rem;
       color:black;
       padding:30px;
       text-shadow: 2px 2px 6px #bcb7c2;
@@ -451,7 +450,6 @@ h2{
         font-size: 0.8em;
     }
     .card p{ 
-        font-size: auto;  /* small screens */
         margin: auto;
     }
 }
