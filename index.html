@@ -4,204 +4,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Clarissa's Portfolio</title>
     <link rel="icon"  href="sunfloweer.jpg">
+    <link rel="stylesheet" href="sty.css" />
 
     <style>
         table,th,td {
             border: 1px black solid;
         }
+        /* body{
+            position: absolute;
+        } */
     </style>
 </head>
 
 <body>
-
     <header>
-        <h1> Clarissa Gutierrez </h1>
-        <h3>Welcome to my personal portfolio: </h3>
+        <!-- <nav class="navbar">
+            <a href="#About">About</a>
+            <a href="#Education">Education</a>
+            <a href="#Experience">Experience</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact">Contact</a>
 
-        <nav>
-            <ol>
+        </nav> -->
+        <section class="top-nav">
+            <div><a href="#" class="topp">TOP</a></div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
                 <li><a href="#About">About</a></li>
                 <li> <a href="#Education">Education</a></li>
                 <li><a href="#Experience">Experience</a></li>
-                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Tools">Tools</a></li>
                 <li><a href="#Projects">Projects</a></li>
                 <li><a href="#Contact">Contact</a></li>
-                <li><a href="experiments.html">Experiments (all extra tags in here)</a></li>
-            </ol>
-        </nav>
+            </ul>
+          </section>
 
+        <!-- <nav class="navbar2">
+            <ul class="nav-list">
+                <li class="list-item" ><a href="#About">About</a></li>
+                <li class="list-item"> <a href="#Education">Education</a></li>
+                <li class="list-item" ><a href="#Experience">Experience</a></li>
+                <li class="list-item"><a href="#Projects">Projects</a></li>
+                <li class="list-item"><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav> -->
+  
     </header>
+
     <main>
+    <div id="welcome">
+        <h3 class="wel-mini">Welcome to my Portfolio </h3>
+        <!-- <h1 class="name"> Clarissa Gutierrez </h1> -->
+        <h1 class="animate-charcter"> Clarissa Gutierrez</h1>
+        <h3 class="wel-mini">Undergraduate Student @ University of California San Diego</h3>
+    </div>
+
+        <!-- <a href="experiments.html">Experiments (all extra tags in here)</a> -->
         <section id="About">
-            <h2>About</h2>
-            <h3>Who I am </h3>
-            <p>My name is Clarissa I am currently a student at the University of California San Diego. I am interested in 
-                work as a Software Engineer/Developer or Front End Engineer in the future. I really like web devlopment. </p>
+            <h2>About me</h2>
+            <p class="text">My name is Clarissa I am from Mexico and I am currently a student at the University of California San Diego. I am interested in 
+                work as a Software Engineer/Developer or Front End Engineer in the future. I am interested in web development. My favorite 
+            language is Java.</p>
 
             <figure>
-                <img src="SS.png" alt="Clarissa pic" width="205" height="250">
+                <img src="SS.png" alt="Clarissa pic" width="205" height="250" class="pic">
                 <figcaption>This is me:)</figcaption>
-
-               
             </figure>
         </section>
 
         <section id="Education">
             <h2>Education </h2>
-            <h3>University of California San Diego</h3>
-            <p>Currently pursuing a <span>B.S in Mathematics and Computer Science</span> with a minor in Cognitive
+            <h3 class="unis">University of California San Diego</h3>
+            <h4 class="location">La Jolla, California</h4>
+            <p class="text" >Currently pursuing a <span>B.S in Mathematics and Computer Science</span> with a minor in Cognitive
                 Science.
             </p>
-            <p>Expected graduation date – <i>June 2023</i></p>
+            <p class="text">Expected graduation date – <i>June 2023</i></p>
+            <br><br><br>
 
-            <h3>Southwestern College</h3>
-            <p> A.S Degree in Mathematics
-            <p> A.A Degree in Computer Science </p>
+            <h3 class="unis">Southwestern College</h3>
+            <h4 class="location">Chula Vista, California </h4>
+            <p class="text"> A.S Degree in Mathematics - <i>July 2020</i> </p>
+            <p class="text"> A.A Degree in Computer Science - <i>Dec 2020</i></p>
 
 
             <a href=#> go upp</a>
+            
         </section>
+        
 
         <section id="Experience">
             <h2>Experience</h2>
+                <h4 class="job-title"><span> - INSTRUCTIONAL ASSISTANT (MATH) - </span></h4>
+                <em class="place">CVLCC High School– Chula Vista CA</em>
+                <ul class="box">
+                    <li>Assisted struggling students with math concepts. (Math I,II,II, Pre-calc, AP Calc)</li>
+                    <li>Helped students interpret instructions and comprehend the class content </li>
+                    <li>Discussed assigned duties with classroom teachers to coordinate instructional efforts</li>
+                </ul>
 
-            <h4>INSTRUCTIONAL ASSISTANT (MATH)</h4>
-            <em>CVLCC High School– Chula Vista CA</em>
-            <ul>
-                <li>Assisted struggling students with math concepts. (Math I,II,II, Pre-calc, AP Calc)</li>
-                <li>Helped students interpret instructions and comprehend the class content </li>
-                <li>Discussed assigned duties with classroom teachers to coordinate instructional efforts</li>
-            </ul>
+                <h4 class="job-title"><span>SOFTWARE DEVELOPER INTERN</span> </h4>
+                <em class="place">San Diego Supercomputer Center – La Jolla CA</em>
+                <ul class="box">
+                    <li>Partnered with team members to complete bi-weekly goals.</li>
+                    <li>Code the proposed UI and UX designs using ReactJS.</li>
+                    <li>Designed user-friendly software to improve accessibility and enhance user experience</li>
+                </ul>
 
-            <h4>SOFTWARE DEVELOPER INTERN </h4>
-            <em>San Diego Supercomputer Center – La Jolla CA</em>
-            <ul>
-                <li>Partnered with team members to complete bi-weekly goals.</li>
-                <li>Code the proposed UI and UX designs.</li>
-                <li>Designed user-friendly software to improve accessibility and enhance user experience</li>
-                <li>Use of ReactJS</li>
-            </ul>
+                <h4 class="job-title"><span>TUTOR</span></h4>
+                <em class="place">Kumon Math & Reading Center – Chula Vista CA</em>
+                <ul class="box">
+                    <li>Supported students in development of efficient and effective study skills.</li>
+                    <li>Tutored children in small groups and individually</li>
+                    <li>Worked with students providing supplemental support in learning different math concepts</li>
+                </ul>
 
-            <h4>TUTOR</h4>
-            <em>Kumon Math & Reading Center – Chula Vista CA</em>
-            <ul>
-                <li>Supported students in development of efficient and effective study skills.</li>
-                <li>Tutored children in small groups and individually</li>
-                <li>Worked with students providing supplemental support in learning different math concepts</li>
-            </ul>
-            <a href=#> go upp</a>
         </section>
 
 
-        <section id="Skills">
-            <h2>Skills</h2>
-            <ul>
+        <section id="Tools">
+            <h2>Tools</h2>
+            <p>Languages I am learning and have some experience with</p>
+            <!-- <ul>
                 <li>Team Collaboration</li>
                 <li>Software: Intellij, Eclipse,  VS Code </li>
                 <li>GIT </li>
                 <li>Bilingual</li>
+            </ul> -->
+            <br>
 
-            </ul>
-            <table>
-                <caption>Programming Langauges</caption>
-                <colgroup>
-                    <col span="2">
-                </colgroup>
-                <tr>
-                    <th>Languages</th>
-                    <th>Proficiency </th>
-                </tr>
-                <tr>
-                    <td>Java</td>
-                    <td>4/5</td>
-                </tr>
-                <tr>
-                    <td>C++</td>
-                    <td>3/5</td>
-                </tr>
-                <tr>
-                    <td>JavaScript</td>
-                    <td>2/5</td>
-                </tr>
-                <tr>
-                    <td>HTML</td>
-                    <td>3/5</td>
-                </tr>
-                <tr>
-                    <td>CSS</td>
-                    <td>3/5</td>
-                </tr>
-            </table>
+
+             <div class="card-container">
+                 <div class="card">
+                     <!-- <picture>
+                        <img src="Logos/JAVA.png" alt="Java" width="100px" height="130px" >
+                    </picture> -->
+                     <p class="na"> JAVA</p>
+                 </div>
+
+                 <div class="card">
+                    <p> C++</p>
+                </div>
+                <div class="card">
+                    <p> JavaScript</p>
+                </div>
+                <div class="card">
+                    <p> HTML</p>
+                </div>
+                <div class="card">
+                    <p> CSS</p>
+                </div>
+                <div class="card">
+                    <p> REACT JS</p>
+                </div>
+                <div class="card">
+                    <p> Github </p>
+                </div>
+                <div class="card">
+                    <p>IntelliJ</p>
+                </div>
+                <div class="card">
+                    <p> VS Code</p>
+                </div>
+
+             </div>
 
         </section>
 
 
         <section id="Projects">
             <h2>Projects</h2>
-
-            <p> <b>Filet-me-on</b> web application developed during my summer internship, this is a site that
-                helps you decide where to eat. This is a recommender restaurant app.</p>
-            <p> <b>UCSD-Toolbox</b> web application developed by two UCSD students (my friend and I) this is
-                a page with all the websites most used by students. We developed a page where you have
-                everything one click away, UCSD- toolbox has everything.</p>
-            <p> <b>Smart-Schedule APP</b> This was a project for my Software Engineering class at UCSD. My
+            <h3 class="proj-name">Filet-me-on</h3>
+                <p class="text"> <b>Filet-me-on</b> web application developed during my summer internship, this is a site that
+                    helps you decide where to eat. This is a recommender restaurant app.</p><br>
+            <h3 class="proj-name">UCSD-Toolbox</h3>
+                <p class="text"> UCSD-Toolbox is a web application developed by two UCSD students (my friend and I) this is
+                    a page with all the websites most used by students. We developed a page where you have
+                    everything one click away, UCSD- toolbox has everything.</p><br>
+            <h3 class="proj-name">Smart-Schedule APP</h3>
+                <p class="text"> Smart-Schedule APP is a project from my Software Engineering class at UCSD. My
                 team developed a smart task schedule web application, using Java Script, HTML and CSS.</p>
 
         </section>
 
 
+
+
         <section id="Contact">
             <h2>Contact</h2>
-            <div>
-                <aside>
-                    <p>You are encourage to send me a message </p>
-                </aside>
-            </div>
 
-            <form>
-                <fieldset>
-                    <legend> <strong>Get in Touch </strong></legend>
-
-                    <label for="fname">First name:</label>
-                    <input type="text" id="fname" name="fname" placeholder="Your First name"><br><br>
-
-                    <label for="lname">Last name:</label>
-                    <input type="text" id="lname" name="lname" placeholder="Your Last name"><br><br>
-
-                    <label for="email">Your email:</label>
-                    <input type="email" id="email" name="email" placeholder="Email in here"><br><br>
-
-                    <label for="org">Reason:</label>
-                    <input list="organization" id="org" name="org">
-                    <datalist id="organization">
-                        <option value="Collaboration">
-                        <option value="Job Opportunity">
-                        <option value="Other">
-                    </datalist>
-                    <br><br>
-
-                    <label for="message">Message:</label><br><br>
-                    <textarea id="message" name="message" placeholder="Write yout message in here.." rows="7"
-                        cols="70"></textarea>
-
-                    <input type="submit">
-
-                </fieldset>
-            </form>
-        </section>
-
-
-            <br>
-            <button>This is a button </button>
+            <h3>Feel free to reach out!</h3><br>
+            <h3>Clarissa Gutierrez Undergrad Student @ UCSD</h3>
             <br><br>
-            <a href="#">GO BACK TO THE TOP</a>
+            <h3 class="personal">Send me an Email: </h3><br>
+                <h3><a class="personal-data" href="mailto:cgutierrezgodoy@ucsd.edu">cgutierrezgodoy@ucsd.edu</a></h3>
+                <br>
             
-        <br><br><hr>
 
+            <h3 class="personal" >Visit my Github account:</h3><br>
+            <h3 ><a class="personal-data" href="https://github.com/clarissagtz"> Clarissa's Github Page</a></h3>
 
-
+            <br><br>
+            <br>
+            <h3>Looking forward to hear from you!</h3>
+        </section>
+        
     </main>
 
     <footer>

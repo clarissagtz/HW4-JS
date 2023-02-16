@@ -1,0 +1,477 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&&family=Lexend+Zetta:wght@100;200;400&family=Mulish:wght@500;700&family=Quicksand:wght@300;600&family=Raleway:wght@100;300&display=swap');
+:root{
+    --onecolor: #ffffff;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  /*this works for hamburger menu */
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #190552;
+    --background: linear-gradient(to left,  #190552, #ff1361 );
+    color: #FFF;
+    height: 50px;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  .menu > li {
+    margin: 0 1rem;
+    overflow: hidden;
+    --background-color: #d394cf;
+  }
+  .menu li a{
+    color: white;
+    text-decoration: none;
+  }
+  .menu li a:hover{
+    --background-color: #d394cf;
+    color:#d394cf;
+    text-decoration: none;
+  }    
+  
+  /* menu icon when page is small */
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: "";
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: "";
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+
+   /*END of hamburger menu */
+   .topp{
+     text-decoration: none;
+     color:white;
+   }
+   .topp:hover{
+     color:#d394cf;
+   }
+
+
+    footer{
+        text-align: center;
+        background-color: rgb(241, 220, 220);
+    }
+    /* maybe update this in experiments
+    transform and transitio*/
+    figcaption{
+        transform: scaleY(1.1);   
+    }
+
+.animate-charcter
+{
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #312061 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 4rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+  /* border: 2px solid red; */
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+body{
+    margin:0;
+    /* font-family: "Quicksand", serif; */
+    font-family: "Raleway", serif; 
+}
+.pic{
+    border-radius: 100px;
+    border: 5px solid rgb(169, 166, 182);
+    margin-top: 20px;
+}
+#welcome{
+    margin: 0px;
+    height: 100vh;
+    --background-image: url(color.png);
+    
+    background-color: rgb(192, 190, 202);
+    font-family: "Raleway", serif;
+    color:black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1, h2, h3{
+    margin:0;
+}
+.wel-mini{
+    font-family: 'Lexend Zetta';
+    font-weight: 200;
+    margin:0;
+    text-shadow: 2px 2px 6px #848086;
+    --border: 3px solid blue;
+}
+#About, #Experience, #Projects{
+    text-align: center;
+    padding: 120px 50px 120px 50px;
+    border: 1px solid black;
+    background-color: rgb(69, 51, 110);
+    color:white; 
+    margin: auto;
+    
+
+    min-height: 100vh;
+    justify-content: center;
+    margin: auto;
+    padding-top: 40px;
+}
+#Experience{
+    padding-bottom: 40px;
+}
+#Education, #Tools, #Contact{
+    text-align: center;
+    padding: 120px 50px 120px 50px;
+    /* background-color: rgb(54, 116, 116); */
+    background-color: rgb(132, 121, 158);
+    color:white; 
+
+    /*Make height of section page size*/
+    min-height: 100vh;
+    justify-content: center;
+    margin: auto;
+    padding-top: 40px;
+}
+h2{ 
+    padding: 20px;
+    font-size: 3rem;
+    text-shadow: 2px 2px 6px #c9c9c9;
+}
+.text{
+    /* border: 1px solid black; */
+    margin: auto;
+    max-width: 80ch;
+    padding: 10px;
+    font-size: 1.2rem;
+ 
+}
+.unis{
+    font-size: 1.4em;
+    font-weight: 400;
+    color:rgb(12, 13, 44);
+    padding-top: 25px;
+    text-shadow: 2px 2px 6px #9f9da0;
+    -border: 2px solid red;
+}
+.location{
+    margin: 10px;
+    padding-bottom: 10px;
+    color: rgb(104, 11, 84);
+    font-style: italic;
+    --border: 2px solid blue ;
+}
+
+.job-title span{
+    color: rgb(66, 16, 60) ;
+    background-color: rgba(255, 255, 255, 0.582);
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+.place{
+    color:#d394cf;
+}
+
+.box{ /*this box class can be replace with elemetn ul (if not used anywhere else*/
+    font-size: 1.1rem;
+    max-width: 65ch;
+    text-align: left;
+    margin: auto;
+    padding-top: 10px;
+    line-height:2em;
+    padding-bottom: 30px;
+    --border: 2px solid salmon;
+    
+}
+.proj-name{
+    /* border: 2px solid  green; */
+    padding: 10px;
+    color:#d394cf;
+    font-size: 1.5rem;
+}
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* align-items: center; this tings fixed the white hover  */
+    background-color: rgb(25, 5, 82);
+    display: flex;
+    justify-content: space-around; /* this and flex together extends thorugh all the menu the links */
+  }
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 100%; /* this makes the hover ancho */
+    transition: all 0.5s ease-out; 
+  }
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+.card {
+    background-color: #ddc8dc;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+    height: 70px; 
+    box-shadow: 1px 2px 6px 2px rgb(39, 33, 41);
+    margin: auto;
+  }
+.card-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .card p{
+      /* font-size: 1.5rem; */
+      font-size: auto;
+      margin: auto;
+      padding-top: 15px;
+      color: black;      
+    }
+    .personal-data{
+      color:white;
+      background-color: #44107a;
+      width: 150px;
+      margin:auto;
+
+      padding: 20px;
+      border-radius: 8px;  
+      text-decoration: none;
+    }
+    .personal{
+      font-size: 400;
+      color:black;
+      padding:30px;
+      text-shadow: 2px 2px 6px #bcb7c2;
+    }
+    #Contact{
+      color: rgb(227, 220, 236);
+    }
+
+
+/* need to take care of menu on top when screen is small , 760 */
+@media only screen and (max-width:880px){
+    .menu-button-container {
+        display: flex;
+      }
+    
+      .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 50px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      #menu-toggle ~ .menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+    
+      #menu-toggle:checked ~ .menu li {
+        border: 1px solid rgb(103, 77, 133);
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+    
+      .menu > li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+        background-color: #190552;
+        
+      }
+    
+      .menu > li:not(:last-child) {
+        border-bottom: 1px solid #444;
+      }
+
+
+    h1{
+        margin:0;
+    }
+    #welcome{
+        text-align: center;
+    }
+    .wel-mini{
+        font-family: 'Lexend Zetta';
+        font-weight: 100;
+        margin: 40px;
+        text-align: center; 
+    }
+    .text{
+        -border: 1px solid black;
+        margin: auto;
+        max-width: 60ch;
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .exp{
+        margin: 20px;
+    }
+    .job-title span{
+        font-size: 0.9rem;
+    }
+    .navbar{
+        height: auto;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .navbar a{
+        /* width:auto; */
+        width: 20%;
+        align-items: center;
+        font-size: 80%;
+    }
+    #About, #Experience, #Projects{
+        min-height: 100vh;
+        /* height: 1000px; */
+        justify-content: center;
+        margin: auto;
+        padding-top: 60px;
+    }
+    #Experience{
+        padding-bottom: 40px;
+    }
+    #Education, #Tools{
+        min-height: 100vh;
+        /* height: 1000px; */
+        justify-content: center;
+        margin: auto;
+        padding-top: 60px;
+    }
+    .box{
+        font-size: 0.9em;
+        line-height:1.3em;
+        padding-bottom: 20px;
+    }
+    .place{
+        font-size: 0.8em;
+    }
+    .card p{ 
+        font-size: auto;  /* small screens */
+        margin: auto;
+    }
+}
+/* for super super small screens */
+@media only screen and (max-width:380px){
+    
+    .place{
+        font-size: 0.3em;
+    }
+    .box{
+        font-size: 0.7em;
+        padding-bottom: 10px;
+    }
+    .job-title span{
+        font-size: 0.5em;
+    }
+    .job-title{
+        margin: 10px;
+    }
+    p{
+        font-size: 0.7em;
+    }
+}
