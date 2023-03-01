@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Dialogs</title>
+   
+    <!-- import customdialogs module -->
+    <script src="./customdialogs.js" type="module"></script>
+
+</head>
+<body>
+    <h1> Custom Dialogs</h1>
+    
+    <dialog id=alertDial>
+        <p>Alert pressed!</p>
+        <form method="dialog">
+          <button>OK</button>
+        </form>
+    </dialog>
+    <button id="alertt">Alert</button>
+
+
+    <dialog id="favDialog">
+        <form method="dialog">
+            <p>Do you confirm this? </p>
+            <div>
+                <button value="false">Cancel</button>
+                <button id="confirmBtn" value="true">Confirm</button>
+            </div>
+        </form>
+    </dialog>
+    <button  id="confirm">Confirm</button>
+
+
+    <dialog id=promptDial>
+        <form method="dialog">
+
+            <label for="fname">What is yout name?</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <br>
+            <!-- this works but only for normal text -->
+            <button>sumbit</button>
+
+
+        </form>
+            
+    </dialog>
+    <button id="prompt">Prompt</button>
+
+    <hr>
+    
+    <output id="demo"></output>
+    
+</body>
+</html>

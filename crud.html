@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST 1</title>
+
+
+
+</head>
+<body>
+    <h1>POSTS LIST</h1>
+
+<!-- ADDED NEW DIALOG  -->
+    <dialog id="favDialog">
+        <form method="dialog">
+            <label for="ftitle">Post Title</label>
+            <input type="text" id="ftitle" name="ftitle"><br><br>
+
+            <label for="pdate">Post Date</label>
+            <input type="date" id="pdate" name="pdate"><br><br>
+
+            <p>Summary</p>
+            <textarea name="summ" class="form-control" id="textarea" cols="30" rows="5"></textarea>
+
+
+            <div>
+                <button id="cancelBut" value="false">Cancel</button>
+                <button id="saveBut" value="true">Save</button>
+            </div>
+        </form>
+    </dialog>
+
+
+
+<!-- DIALOG FOR EDIT  -->
+    <dialog id="editDialog">
+      <form method="dialog">
+          <label for="ftitle2">Post Title</label>
+          <input type="text" id="ftitle2" name="ftitle2"><br><br>
+
+          <label for="pdate2">Post Date</label>
+          <input type="date" id="pdate2" name="pdate2"><br><br>
+
+          <p>Summary</p>
+          <textarea name="summ" class="form-control" id="textarea2" cols="30" rows="5"></textarea>
+
+
+          <div>
+              <!-- <button id="cancelEdit" value="false">Cancel</button> -->
+              <button id="saveCh" value="true">Save changes</button>
+          </div>
+      </form>
+  </dialog>
+
+
+
+<!-- DIALOG FOR DELETE  -->
+<dialog id="deleteDialog">
+    <form method="dialog">
+
+        <p>Are you sure you want to delete? </p>
+        <div>
+            <output></output>
+            <button  value="false">Cancel</button>
+            <button id="deletePost" value="true">YES</button>
+        </div>
+    </form>
+  </dialog>
+
+
+    <button  id="createPost">Add new post</button>
+
+
+
+<div class="row">
+  <div class="columns medium-8 medium-offset-2">
+  <ul id="list-items"> </ul>
+  </div>
+</div>
+    
+<script src="./blog.js"></script>
+</body>
+</html>

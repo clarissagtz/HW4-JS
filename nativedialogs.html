@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.min.js" integrity="sha512-TU4FJi5o+epsahLtM9OFRvH2gXmmlzGlysk9wtTFgbYbMvFzh3Cw1l3ubnYIvBiZCC/aurRHS408TeEbcuOoyQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.js" integrity="sha512-TRW4uJEyH03RBYDDP/0Nerf3y1zPCPzmLBq5IwjYtUyPD505Aro7Xh6ELpKmnH3yeKj6MP3meheJMJXB4aN0eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Sample Dialogs </title>
+</head>
+<body>
+    <h1>Simple Dialogs</h1>
+    <button  id="example">Alert</button>
+    <button id="confirm">Confirm</button>
+    <button id="prompt">Prompt</button>
+    <button id="saferPrompt">Safer Prompt</button>
+    <hr>
+    <output></output>
+
+    <script >
+        let buttonToBeClicked = document.getElementById("example");
+        let confirmButton = document.getElementById("confirm");
+        let promptButton = document.getElementById("prompt");
+        let saferButton = document.getElementById("saferPrompt");
+        
+        buttonToBeClicked.addEventListener("click", alertBut);
+        //callback function
+        function alertBut(){
+            alert('Alert pressed!');
+        }
+
+        //CONFIRM BUTTON
+        confirmButton.addEventListener("click", confirmFunc);
+        //callback function
+        function confirmFunc(){
+            let text = "Do you confirm this?";
+            if (confirm(text) == true) {
+                text = "The value returned by the confirm method is : True";
+            }else {
+                text = "The value returned by the confirm method is : False";
+            }
+            document.querySelector('output').innerHTML = text;
+
+        }
+        promptButton.addEventListener("click", promptFunc);
+        function promptFunc(){
+            let text;
+            let person = prompt("What is your name?");
+            if (person == null || person == "") {
+                text = "Prompt result: User didn't enter anything";
+            }else {
+                text = "Prompt result: " + person ;
+            }
+            document.querySelector('output').innerHTML = text;
+        }
+
+        saferButton.addEventListener("click", saferFunc);
+        function saferFunc(){
+            let text;
+            let person = prompt("What is your name?", `<b onmouseover="alert('pwned')"> Roll me </b>`);
+            if (person == null || person == "") {
+                text = "Prompt result: User didn't enter anything";
+            }else {
+                text = "Prompt result: " + person ;
+            }
+            let clean = DOMPurify.sanitize(text);
+            document.querySelector('output').innerHTML = clean;
+        }
+    </script>
+</body>
+</html>
