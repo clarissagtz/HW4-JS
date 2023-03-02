@@ -1,4 +1,5 @@
-## Changes made in my porfolio ##
+## Part 5:
+### Changes made in my porfolio 
 
 - I added transition to my profile picture, now if you hover over my picture it zooms in a little. 
 - I also addede two more pictures, the logos from the schools I went. (UCSD and SWC logos on the Education section) 
