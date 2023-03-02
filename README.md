@@ -4,4 +4,5 @@ Clarissa Gutierrez
 PID: A16607496
 
 Netlify site: https://merry-lily-09b9ce.netlify.app/
-Please look at link.md which have all the links for the different parts of this Homework.
+
+Please look at **link.md** which have all the links for the different parts of this Homework.
