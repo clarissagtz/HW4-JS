@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&&family=Lexend+Zetta:wght@100;200;400&family=Mulish:wght@500;700&family=Quicksand:wght@300;600&family=Raleway:wght@100;300;400&display=swap');
+*{
+  font-family: "Raleway", serif; 
+}
+h1{
+  text-align: center;
+  font-size: 3rem;
+  margin:0;
+  padding: 0;
+}
+.icons{
+  cursor:pointer;
+  width: 23px;
+
+}
+.box{
+  background-color: rgb(155, 201, 223);
+  border: 2px solid rgb(49, 13, 70);
+  border-radius: 22px;
+  margin: auto;
+  padding: 15px;
+  width: 400px;
+}
+b{
+  font-weight: 300px;
+  font-size: 1.08rem;
+  color:rgb(167, 29, 148);
+}
+ul, li{
+  list-style-type: none;  
+
+}
+.bottom-card{
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7px;
+  /* border: 3px solid black; */
+  /* max-width: 80px; */
+}
+.add-new{
+  text-align: center;
+}
+#createPost{
+  height: 55px;
+  width: 200px;
+  cursor: pointer;
+  background-color: rgb(24, 24, 206);
+  color:white;
+  font-size: 1.3rem;
+  border-radius: 14px;
+  border : 2px ;
+}
+#createPost:hover{
+  background-color:rgb(96, 149, 199);
+  color:black;
+}
+dialog{
+  border-radius: 20px;
+  background-color: rgb(154, 235, 206);
+  border: 2px solid rgb(81, 85, 77);
+  padding: 50px;
+
+}
+#deleteDialog{
+  background-color: rgb(228, 179, 179);
+  text-align: center;
+
+}
+input{
+  background-color: rgb(233, 252, 236);
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(73, 214, 167);
+  padding: 3px;
+}
+textarea{
+  background-color: rgb(233, 252, 236);
+  border-radius: 10px;
+  border: 1px solid rgb(73, 214, 167);
+  padding: 3px;
+
+}
+.modal-but{
+  text-align: center;
+}
+.modal-but button{
+  background-color: rgb(185, 233, 193);
+  border-radius: 3px;
+  border: 1px solid green;
+  width: 80px;
+  padding: 8px;
+  margin-top: 20px;
+}
+.modal-but button:hover{
+  background-color: aliceblue;
+  cursor: pointer;
+}
+#saveCh{
+  width: 130px;
+}
+.delete-modal button{
+  border-radius: 3px;
+  border: 1px solid rgb(184, 94, 91);
+  width: 80px;
+  padding: 8px;
+  background-color: rgb(236, 220, 228);
+}
+.delete-modal button:hover{
+  background-color: rgb(240, 159, 159);
+  cursor:pointer;
+}

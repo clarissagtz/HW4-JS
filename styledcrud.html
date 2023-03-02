@@ -10,15 +10,16 @@
 
     gtag('config', 'G-KDE9H14L9P');
     </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD PART3</title>
-
-
+    <title>STYLED CRUD</title>
+    <link rel="stylesheet" href="stylecrud.css">
 
 </head>
 <body>
     <h1>POSTS LIST</h1>
+    <hr>
 
 <!-- ADDED NEW DIALOG  -->
     <dialog id="favDialog">
@@ -33,7 +34,7 @@
             <textarea name="summ" class="form-control" id="textarea" cols="30" rows="5"></textarea>
 
 
-            <div>
+            <div class ="modal-but">
                 <button id="cancelBut" value="false">Cancel</button>
                 <button id="saveBut" value="true">Save</button>
             </div>
@@ -55,8 +56,7 @@
           <textarea name="summ" class="form-control" id="textarea2" cols="30" rows="5"></textarea>
 
 
-          <div>
-              <!-- <button id="cancelEdit" value="false">Cancel</button> -->
+          <div class ="modal-but">
               <button id="saveCh" value="true">Save changes</button>
           </div>
       </form>
@@ -69,25 +69,25 @@
     <form method="dialog">
 
         <p>Are you sure you want to delete? </p>
-        <div>
+        <div class="delete-modal">
             <output></output>
             <button  value="false">Cancel</button>
             <button id="deletePost" value="true">YES</button>
         </div>
     </form>
   </dialog>
+  <br>
 
-
+<div class="add-new">
     <button  id="createPost">Add new post</button>
+</div>
 
 
 
-<div class="row">
-  <div class="columns medium-8 medium-offset-2">
+<div>
   <ul id="list-items"> </ul>
-  </div>
 </div>
     
-<script src="./blog.js"></script>
+<script src="./styledblog.js"></script>
 </body>
 </html>

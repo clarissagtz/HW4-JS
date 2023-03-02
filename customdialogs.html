@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDE9H14L9P"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KDE9H14L9P');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- DOMPurify -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.min.js" integrity="sha512-TU4FJi5o+epsahLtM9OFRvH2gXmmlzGlysk9wtTFgbYbMvFzh3Cw1l3ubnYIvBiZCC/aurRHS408TeEbcuOoyQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.js" integrity="sha512-TRW4uJEyH03RBYDDP/0Nerf3y1zPCPzmLBq5IwjYtUyPD505Aro7Xh6ELpKmnH3yeKj6MP3meheJMJXB4aN0eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Custom Dialogs</title>
    
     <!-- import customdialogs module -->
@@ -12,6 +24,7 @@
 <body>
     <h1> Custom Dialogs</h1>
     
+    <!-- alert Dialog -->
     <dialog id=alertDial>
         <p>Alert pressed!</p>
         <form method="dialog">
@@ -20,7 +33,7 @@
     </dialog>
     <button id="alertt">Alert</button>
 
-
+    <!-- Confirm Dialog -->
     <dialog id="favDialog">
         <form method="dialog">
             <p>Do you confirm this? </p>
@@ -32,25 +45,20 @@
     </dialog>
     <button  id="confirm">Confirm</button>
 
-
+    <!-- prompt Dialog -->
     <dialog id=promptDial>
         <form method="dialog">
-
             <label for="fname">What is yout name?</label><br>
             <input type="text" id="fname" name="fname"><br>
             <br>
-            <!-- this works but only for normal text -->
             <button>sumbit</button>
-
-
-        </form>
-            
+        </form>        
     </dialog>
     <button id="prompt">Prompt</button>
 
     <hr>
     
-    <output id="demo"></output>
+    <output></output>
     
 </body>
 </html>

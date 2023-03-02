@@ -39,6 +39,9 @@ favDialog.addEventListener('close', () => {
     } else {
       text = `Prompt result: ${inputField.value}`;
     }
-    document.getElementById("demo").innerHTML = text;
+    let clean = DOMPurify.sanitize(text);
+    document.querySelector('output').innerHTML = clean;
+    inputField.value = "";
+
     }; 
   
